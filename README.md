@@ -74,7 +74,7 @@
     http://demo.testfire.net/bank/
     
     Steps taken to exploit the vulnerability:
-    http://demo.testfire.net/bank/
+    1. enter the url in browser: http://demo.testfire.net/bank/
 
 ###screenshot (SQL injection)
 ![](https://github.com/Kururu1992/deliverable5/blob/master/screenshot/directory_browsing.jpg)
