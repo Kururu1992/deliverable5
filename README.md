@@ -23,5 +23,34 @@
     2. input "><script>alert(1);</script> in the Username field.
     3. enter a radom password in Password field.
     
-###screenshot(CSS)
+###screenshot (CSS)
 ![](https://github.com/Kururu1992/deliverable5/blob/master/screenshot/xss_login.jpg)
+
+
+##Vulnerability 1: SQL injection
+
+        The SQL injection will do harm to confidentiality and integrity, since attacker can modify 
+        sensitive data,unauthorized access.  Interception and modification can exploit this vulnerability.
+        Attackers can read and modify data from database.  The SQL injection is an active attack, 
+        attackers use mallicious injection to get sensitive data and unauthorized access, which may cause 
+        tramendous business loss.  If the attacker get the administration, it will cause further loss.  
+        
+        There are several steps to pretend SQL injection. 
+        1. Filter the sensitive character in the parameter that needed in SQL
+        2. Disable the xp_cmdshell store process, delete the relative dll
+        3. Filter the exception message in server.
+        
+        The URL of the website has vulnerability:
+        http://demo.testfire.net/bank/login.aspx
+        
+        Steps taken to exploit the vulnerability:
+        1. load the login page: http://demo.testfire.net/bank/login.aspx
+        2. input ZAP' OR '1'='1' -- in Username field
+        3. input ZAP' OR '1'='1' -- in Password field
+        4. press login button
+        
+###screenshot (SQL injection)
+![](https://github.com/Kururu1992/deliverable5/blob/master/screenshot/SQL_1.jpg)
+![](https://github.com/Kururu1992/deliverable5/blob/master/screenshot/SQL_2.jpg)
+
+        
